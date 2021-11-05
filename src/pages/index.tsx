@@ -138,7 +138,7 @@ export default function Page() {
 export async function getServerSideProps({ req, res }) {
   res.setHeader(
     'Cache-Control',
-    'public, maxage=20'
+    'public, max-age=20'
   )
 
   return {
